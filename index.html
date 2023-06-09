@@ -1535,27 +1535,67 @@
     </script>
 
     <!--olw carousel-->
+<!--    <script>-->
+
+<!--        $(document).ready(function () {-->
+
+<!--            $(".owl-carousel").owlCarousel({-->
+<!--                margin: 5,-->
+<!--                items: 11,-->
+<!--                itemsDesktop: [1199, 3],-->
+<!--                itemsDesktopSmall: [979, 3],-->
+<!--                center: true,-->
+<!--                nav: true,-->
+<!--                loop: true,-->
+
+<!--                responsive: {-->
+<!--                    600: {-->
+<!--                        items: 4-->
+<!--                    }-->
+<!--                }-->
+<!--            });-->
+<!--        });-->
+<!--    </script>-->
     <script>
-
         $(document).ready(function () {
-
-            $(".owl-carousel").owlCarousel({
-                margin: 5,
+            var owl = $('.owl-carousel');
+            owl.owlCarousel({
                 items: 11,
-                itemsDesktop: [1199, 3],
-                itemsDesktopSmall: [979, 3],
-                center: true,
-                nav: true,
-                loop: true,
+                margin: 10,
 
                 responsive: {
+                    0: {
+                        items: 2
+                    },
+                    400: {
+                        items: 3
+                    },
                     600: {
                         items: 4
-                    }
+                    },
+                    1000: {
+                        items: 5
+                    },
+                    1200: {
+                        items: 6
+                    },
+                    1400: {
+                        items: 7
+                    },
+                    1600: {
+                        items: 8
+                    },
+                    1800: {
+                        items: 9
+                    },
+                    2000: {
+                        items: 10
+                    },
                 }
-            });
-        });
+            })
+        })
     </script>
+
 
     <!--tooltip-->
     <script>
